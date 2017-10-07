@@ -105,8 +105,8 @@ tar ball + configure + makeコマンド
     ファイルの変換に使っている
 
 - mini Ruby  
-    mini rubyはビルド中に作られる
-    Makefile、拡張ライブラリを生成したりする
+    mini rubyはビルド中に作られる<br />
+    Makefile、拡張ライブラリを生成したりする<br />
     debugしやすい
 
 ---
@@ -120,7 +120,7 @@ tar ball + configure + makeコマンド
 
 ---
 
-**Rubyは「簡単な文法」と「錯覚」させている**
+**Rubyは「簡単な文法」だと「錯覚」させている**
 
 ---
 
@@ -130,16 +130,20 @@ tar ball + configure + makeコマンド
 
 #### 2. String#internをrefinementsすると式展開された文字列からsymbolが作られない  
 
+---
+
+- String#intern: 文字列に対応するsymbolを返す
+- Refinements: クラスの拡張範囲を限定する機能
+
+---
+
 ```
 :"#{foo}"
 ```
 
----
-
-文字列になってしまう
-
-- String#intern: 文字列に対応するsymbolを返す
-- Refinements: クラスの拡張範囲を限定する機能
+文字列になってしまう<br />
+<br />
+らしい
 
 ---
 
