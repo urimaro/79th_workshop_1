@@ -1,27 +1,53 @@
 ### Making Ruby? ゆるふわRuby生活
+
 パッチモンスターことナカダさん
+
+---
 
 少し前、YARVの開発者 笹田さんがcookpadに移籍したので、
 事務処理できる人がいなくなったとのこと
 
 ---
 
-RubyはSubversionを使って、
-ソースコードを管理している
+概要
+
+- Rubyの開発について
+  - リポジトリ
+  - 新機能/課題の管理
+  - 開発者会議
+- Rubyのビルドの仕方
+- バグ事例
+- Ruby2.5について
 
 ---
+
+#### リポジトリ
+
+- Subversinoで管理している
+- GitHubにミラーがある
+
+---
+
+よくある質問
+
+---
+
+RubyはSubversionを使って、<br />
+ソースコードを管理している
 
 なぜGitを使わないのか
 
 ---
 
 1. RubyはGitより古い  
-    Ruby: 1993
+    Ruby: 1993  
     Git: 2005
 
-2. hashがわかりにくい  
-    commit id(hash): コミットごとにhashが割当てられる
-    revision number: ソース全体に同じ番号が割当てられる
+2. hashがわかりにくい
+    - commit id(hash)  
+        コミットごとにhashが割当てられる
+    - revision number  
+        ソース全体に同じ番号が割当てられる
 
 3. 公式にはwindowsをサポートしていない
 
@@ -31,14 +57,19 @@ RubyはSubversionを使って、
 
 ---
 
-Redmineで機能の提案やバグを管理している
+#### 新機能/課題の管理
+
+Redmineで管理している
 
 ---
 
-月に1回開発者会議をしている
+#### 開発者会議
+
+月に1回開催している
 
 ---
-Rubyのビルドの仕方
+
+#### Rubyのビルドの仕方
 
 1. tar ballを使う  
     tar ball + configure + makeコマンド
@@ -46,7 +77,12 @@ Rubyのビルドの仕方
     リポジトリからRubyをビルドするのは手間がかかる
 
 ---
+
+#### リポジトリのソースコードを使う場合
+
 RubyをビルドするのにRubyが必要!
+
+---
 
 - ベースとなるRuby  
     ファイルの変換に使っている
@@ -57,18 +93,25 @@ RubyをビルドするのにRubyが必要!
 
 ビルドプロセスの改善中
 - 処理の並列化
+
 ---
-バグフィックスの事例
+
+#### バグフィックスの事例
+
+---
 
 **Rubyは「簡単な文法」と「錯覚」させている**
 
-
 ---
+
 1. 変数pとpコマンド
 
-2. String#internをrefinementsすると式展開された文字列からsymbolが作られない => 文字列になってしまう
-    String#intern: 文字列に対応するsymbolを返す
-    Refinements: クラスの拡張範囲を限定する機能
+---
+
+2. String#internをrefinementsすると式展開された文字列からsymbolが作られない  
+    文字列になってしまう
+    - String#intern: 文字列に対応するsymbolを返す
+    - Refinements: クラスの拡張範囲を限定する機能
 
 ---
 
@@ -89,7 +132,7 @@ Ruby2.5: no eye-captcher feature
 
 ---
 
-感想
+#### 感想
 
 ---
 
