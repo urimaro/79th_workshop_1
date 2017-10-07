@@ -1,10 +1,11 @@
-## Making Ruby? ゆるふわRuby生活
+## Making Ruby?
+## ゆるふわRuby生活
 
 パッチモンスターことナカダさん
 
 ---
 
-笹田さんがcookpadに移籍したので、<>
+笹田さんがcookpadに移籍したので、<br />
 事務処理できる人がいなくなったとのこと
 
 ---
@@ -41,21 +42,21 @@ RubyはSubversionを使って、<br />
 
 ---
 
-1. RubyはGitより古い  
-    Ruby: 1993  
-    Git: 2005
+#### 1. RubyはGitより古い  
+- Ruby: 1993  
+- Git: 2005
 
 ---
 
-2. hashがわかりにくい
-    - commit id(hash)  
-        コミットごとにhashが割当てられる
-    - revision number  
-        ソース全体に同じ番号が割当てられる
+#### 2. hashがわかりにくい
+- commit id(hash)  
+    コミットごとにhashが割当てられる
+- revision number  
+    ソース全体に同じ番号が割当てられる
 
 ---
 
-3. 公式にはwindowsをサポートしていない
+#### 3. 公式にはwindowsをサポートしていない
 
 ---
 
@@ -91,7 +92,8 @@ tar ball + configure + makeコマンド
 ---
 
 #### 2. リポジトリのソースコードを使う
-リポジトリからRubyをビルドするのは手間がかかる
+リポジトリからRubyをビルドするのは<br />
+手間がかかる
 
 ---
 
@@ -109,7 +111,8 @@ tar ball + configure + makeコマンド
 
 ---
 
-処理の並列化などビルドプロセスの改善中
+処理の並列化など<br />
+ビルドプロセスの改善中
 
 ---
 
@@ -121,11 +124,18 @@ tar ball + configure + makeコマンド
 
 ---
 
-#### 1. 変数pとpコマンド
+#### 1. 変数pとpメソッド
 
 ---
 
 #### 2. String#internをrefinementsすると式展開された文字列からsymbolが作られない  
+
+```
+:"#{foo}"
+```
+
+---
+
 文字列になってしまう
 
 - String#intern: 文字列に対応するsymbolを返す
@@ -133,7 +143,7 @@ tar ball + configure + makeコマンド
 
 ---
 
-Ruby2.5: no eye-captcher feature
+#### Ruby2.5: no eye-captcher feature
 
 ---
 
@@ -157,15 +167,16 @@ Ruby2.5: no eye-captcher feature
 ---
 
 **もっと「Rubyを」いじってね**<br />
+<br />
 ということだと思いました。
 
 ---
 
-Rubyのなかを覗いてみよう！
-「Cookpad Ruby Hack Challenge」に参加してみた
-池澤あやかさん
-https://codeiq.jp/magazine/2017/09/53932/
-
-
-Cookpad Ruby Hack Challenge - 笹田さん
+Rubyのなかを覗いてみよう！<br />
+「Cookpad Ruby Hack Challenge」に参加してみた<br />
+池澤あやかさん<br />
+https://codeiq.jp/magazine/2017/09/53932/<br />
+<br />
+<br />
+Cookpad Ruby Hack Challenge - 笹田さん<br />
 https://github.com/ko1/rubyhackchallenge
