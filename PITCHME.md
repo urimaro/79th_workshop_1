@@ -72,6 +72,8 @@ Q. なぜGitを使わないのか？
 
 Redmineで管理している
 
+https://bugs.ruby-lang.org/
+
 ---
 
 ### C. 開発者会議
@@ -79,6 +81,8 @@ Redmineで管理している
 ---
 
 月に1回開催している
+
+https://bugs.ruby-lang.org/projects/ruby/wiki#Developer-Meetings
 
 ---
 
@@ -92,6 +96,8 @@ Redmineで管理している
 #### 1. tar ballを使う
 
 tar ball + configure + makeコマンド
+
+ref. https://www.ruby-lang.org/ja/documentation/installation/
 
 ---
 
