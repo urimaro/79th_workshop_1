@@ -1,30 +1,34 @@
 ## Making Ruby?
 ## ゆるふわRuby生活
 
-パッチモンスターことナカダさん
+パッチモンスターこと中田さん
 
 ---
 
-笹田さんがcookpadに移籍したので、<br />
+笹田さんがcookpadに移籍したので、  
 事務処理できる人がいなくなったとのこと
 
 ---
 
-#### 概要
+### 概要
 
-- Rubyの開発について
-  - リポジトリ
-  - 新機能/課題の管理
-  - 開発者会議
-- Rubyのビルドの仕方
-- バグ事例
-- Ruby2.5について
+- 1. Rubyの開発について
+  - A. リポジトリ
+  - B. 新機能/課題の管理
+  - C. 開発者会議
+- 2. Rubyのビルドの仕方
+- 3. バグ事例
+- 4. Ruby2.5について
 
 ---
 
-#### リポジトリ
+### 1. Rubyの開発環境について
 
-- Subversinoで管理している
+---
+
+### A. リポジトリ
+
+- Subversionで管理している
 - GitHubにミラーがある
 
 ---
@@ -33,22 +37,19 @@
 
 ---
 
-RubyはSubversionを使って、<br />
-ソースコードを管理している
+Q. なぜGitを使わないのか？
 
 ---
 
-なぜGitを使わないのか
+### 1. RubyはGitより古い
 
----
-
-#### 1. RubyはGitより古い  
 - Ruby: 1993  
 - Git: 2005
 
 ---
 
-#### 2. hashがわかりにくい
+### 2. hashがわかりにくい
+
 - commit id(hash)  
     コミットごとにhashが割当てられる
 - revision number  
@@ -56,7 +57,7 @@ RubyはSubversionを使って、<br />
 
 ---
 
-#### 3. 公式にはwindowsをサポートしていない
+### 3. 公式にはwindowsをサポートしていない
 
 ---
 
@@ -64,7 +65,7 @@ RubyはSubversionを使って、<br />
 
 ---
 
-#### 新機能/課題の管理
+### 新機能/課題の管理
 
 ---
 
@@ -72,7 +73,7 @@ Redmineで管理している
 
 ---
 
-#### 開発者会議
+### 開発者会議
 
 ---
 
@@ -80,19 +81,22 @@ Redmineで管理している
 
 ---
 
-#### Rubyのビルドの仕方
+### Rubyのビルドの仕方
+
 1. tar ballを使う
 2. リポジトリのソースコードを使う
 
 ---
 
-#### 1. tar ballを使う
+### 1. tar ballを使う
+
 tar ball + configure + makeコマンド
 
 ---
 
-#### 2. リポジトリのソースコードを使う
-リポジトリからRubyをビルドするのは<br />
+### 2. リポジトリのソースコードを使う
+
+リポジトリからRubyをビルドするのは  
 手間がかかる
 
 ---
@@ -105,18 +109,18 @@ tar ball + configure + makeコマンド
     ファイルの変換に使っている
 
 - mini Ruby  
-    mini rubyはビルド中に作られる<br />
-    Makefile、拡張ライブラリを生成したりする<br />
+    mini rubyはビルド中に作られる  
+    Makefile、拡張ライブラリを生成したりする  
     debugしやすい
 
 ---
 
-処理の並列化など<br />
+処理の並列化など  
 ビルドプロセスの改善中
 
 ---
 
-#### バグフィックスの事例
+### バグフィックスの事例
 
 ---
 
@@ -124,11 +128,11 @@ tar ball + configure + makeコマンド
 
 ---
 
-#### 1. 変数pとpメソッド
+### 1. 変数pとpメソッド
 
 ---
 
-#### 2. String#internをrefinementsすると式展開された文字列からsymbolが作られない  
+### 2. String#internをrefinementsすると式展開された文字列からsymbolが作られない  
 
 ---
 
@@ -147,7 +151,11 @@ tar ball + configure + makeコマンド
 
 ---
 
-#### Ruby2.5: no eye-captcher feature
+### Ruby2.5について
+
+---
+
+**No eye-catcher feature in 2.5**
 
 ---
 
@@ -170,17 +178,17 @@ tar ball + configure + makeコマンド
 
 ---
 
-**もっと「Rubyを」いじってね**<br />
-<br />
+**もっと「Rubyを」いじってね**
+
 ということだと思いました。
 
 ---
 
-Rubyのなかを覗いてみよう！<br />
-「Cookpad Ruby Hack Challenge」に参加してみた<br />
-池澤あやかさん<br />
-https://codeiq.jp/magazine/2017/09/53932/<br />
-<br />
-<br />
-Cookpad Ruby Hack Challenge - 笹田さん<br />
+Rubyのなかを覗いてみよう！  
+「Cookpad Ruby Hack Challenge」に参加してみた  
+池澤あやかさん  
+https://codeiq.jp/magazine/2017/09/53932/
+
+
+Cookpad Ruby Hack Challenge - 笹田さん  
 https://github.com/ko1/rubyhackchallenge
